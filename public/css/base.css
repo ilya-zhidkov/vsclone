@@ -58,3 +58,11 @@ i.icon.fa-align-right {
     rotate: 180deg;
     color: var(--color-icon);
 }
+
+i.fa-js {
+    color: #ffff00;
+}
+
+i.fa-html5 {
+    color: #ff4500;
+}
