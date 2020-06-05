@@ -202,3 +202,78 @@ main > div.grid > section.minimap > code {
 main > div.grid > section.minimap > code span.unknown-word::after {
     top: 4px;
 }
+
+main > aside {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+main > aside > div.grid {
+    /* icons | explorer */
+    grid-template-columns: 50px 1fr;
+    height: 100%;
+}
+
+main > aside > div.grid > ul.icons {
+    grid-column: 1;
+    justify-content: flex-start;
+    text-align: center;
+}
+ 
+main > aside > div.grid > ul.icons > li {
+    position: relative;
+    width: 100%;
+    color: var(--color-default-icon);
+    margin-bottom: 25px;
+}
+
+main > aside > div.grid > ul.icons > li.active > i {
+    color: var(--color-active-text);
+}
+
+main > aside > div.grid > ul.icons > li.active::before {
+    content: "";
+    position: absolute;
+    left: 0rem;
+    top: -10px;
+    height: 50px;
+    border-left: 2px solid var(--color-active-text);
+}
+
+main > aside > div.grid > ul.icons > li span.indicator {
+    position: absolute;
+    bottom: -2px;
+    right: 8px;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(77, 120, 204);
+    border-radius: 50%;
+}
+
+main > aside > div.grid > ul.icons > li > span.indicator > label.counter {
+    position: absolute;
+    color: rgb(217, 217, 217);
+    filter: brightness(150%);
+    font-size: var(--font-size-tiny);
+    transform: translate(-55%, 5%);
+}
+
+main > aside > div.grid > ul.icons > li:first-child {
+    margin-top: 10px;
+}
+
+main > aside > div.grid > ul.icons > li:last-child {
+    margin-top: auto;
+}
+
+main > aside > div.grid > ul.icons > li:hover {
+    color: var(--color-active-text);
+}
+
+main > aside > div.grid > ul.icons > li > i {
+    font-size: 1.5rem;
+}
+
+main > aside > div.grid > ul.icons > li > i.fa-search {
+    rotate: 90deg;
+}
