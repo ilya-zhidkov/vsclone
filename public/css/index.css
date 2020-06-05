@@ -80,3 +80,17 @@ main > div.grid > nav > ul.tabs > li:hover {
 main > div.grid > nav > ul.tabs > li:not(:first-child) {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
+
+main > div.grid > nav > ul.settings {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    justify-content: center;
+    width: 100px;
+    background-color: var(--background-color-toolbar);
+}
+
+main > div.grid > nav > ul.settings > li {
+    padding: 0 0.5rem;
+}
