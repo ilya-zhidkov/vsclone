@@ -15,7 +15,7 @@ A static template of popular Visual Studio Code editor.
 
 - [x] Light Theme
 - [x] Dark Theme
-- [ ] Changing color scheme
+- [x] Changing color scheme
 - [ ] Persisting current color setting
 
 ---
