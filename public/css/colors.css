@@ -27,4 +27,28 @@
 
     --box-shadow-color-light: rgba(0, 0, 0, 0.3);
     --box-shadow-color-light-key-cap: rgb(204, 204, 204);
+
+    /* Dark theme */
+    --background-color-dark: rgb(2, 32, 40);
+    --background-color-darken-sidebar: rgb(1, 25, 32);
+    --background-color-dark-active: rgb(21, 39, 46);
+    --background-color-dark-active-command: rgb(9, 72, 92);
+    --background-color-dark-active-list-item: rgb(3, 38, 49);
+    --background-color-dark-current-line: rgb(10, 41, 51);
+    --background-color-dark-toolbar: rgb(5, 49, 64);
+    --background-color-dark-key-cap: rgb(18, 37, 43);
+    --background-color-dark-input: rgb(4, 42, 55);
+    
+    --color-dark-paragraph: rgb(79, 95, 101);
+    --color-light-plain-text: rgb(180, 180, 180);
+    --color-light-active-text: rgb(217, 217, 217);
+    --color-light-icon: rgb(202, 206, 204);
+    --color-light-code : rgb(151, 158, 157);
+    --color-dark-note: rgb(21, 104, 110);
+    
+    --border-color-dark-active: rgb(24, 100, 100);
+    --border-color-light-indentation: rgb(70, 70, 70);
+
+    --box-shadow-color-dark: rgba(0, 0, 0, 0.75);
+    --box-shadow-color-dark-key-cap: rgb(38, 46, 49);
 }

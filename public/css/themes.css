@@ -23,3 +23,29 @@
     --box-shadow-color: var(--box-shadow-color-light);
     --box-shadow-color-key-cap: var(--box-shadow-color-light-key-cap);
 }
+
+.vscode-dark {
+    --background-color: var(--background-color-dark);
+    --background-color-sidebar: var(--background-color-darken-sidebar);
+    --background-color-active: var(--background-color-dark-active);
+    --background-color-active-command: var(--background-color-dark-active-command);
+    --background-color-active-list-item: var(--background-color-dark-active-list-item);
+    --background-color-toolbar: var(--background-color-dark-toolbar);
+    --background-color-key-cap: var(--background-color-dark-key-cap);
+    --background-color-current-line: var(--background-color-dark-current-line);
+    --background-color-input: var(--background-color-dark-input);
+    --background-color-dropdown: var(--background-color-active);
+
+    --color-plain-text: var(--color-light-plain-text);
+    --color-active-text: var(--color-light-active-text);
+    --color-icon: var(--color-light-icon);
+    --color-code: var(--color-light-code);
+    --color-note: var(--color-dark-note);
+    --color-paragraph: var(--color-dark-paragraph);
+
+    --border-color-active: var(--border-color-dark-active);
+    --border-color-indentation: var(--border-color-light-indentation);
+
+    --box-shadow-color: var(--box-shadow-color-dark);
+    --box-shadow-color-key-cap: var(--box-shadow-color-dark-key-cap);
+}
