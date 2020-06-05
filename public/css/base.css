@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--color-plain-text);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    overflow-y: scroll;
+}
+
+ul li:hover,
+ul li *:hover,
+i:hover,
+button:hover {
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--background-color);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-name {
+    margin-left: 6px;
+}
+
+.folder-name {
+    margin-left: 6px;
+}
+
+.grid {
+    display: grid;
+}
+
+.icon {
+    font-size: var(--font-size-small);
+}
+
+i.icon.fa-align-right {
+    rotate: 180deg;
+    color: var(--color-icon);
+}
