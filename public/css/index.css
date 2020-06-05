@@ -94,3 +94,31 @@ main > div.grid > nav > ul.settings {
 main > div.grid > nav > ul.settings > li {
     padding: 0 0.5rem;
 }
+
+main > div.grid > nav > ul.breadcrumb {
+    height: 25px;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    background-color: var(--background-color);
+}
+
+main > div.grid > nav > ul.breadcrumb > li {
+    padding-left: 12px;
+}
+
+main > div.grid > nav > ul.breadcrumb > li > a:hover {
+    color: var(--color-active-text);
+}
+
+main > div.grid > nav > ul.breadcrumb > li > i {
+    font-size: var(--font-size-small);
+    padding-left: 6px;
+}
+
+main > div.grid > nav > ul.breadcrumb > li:not(:last-child)::after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    font-size: var(--font-size-tiny);
+    padding-left: 8px;
+}
