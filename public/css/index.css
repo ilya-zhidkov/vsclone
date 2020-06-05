@@ -7,8 +7,8 @@ html {
 
 body {
     display: grid;
-    /* header | editor | footer */
-    grid-template-rows: auto 1fr auto;
+    /* editor | footer */
+    grid-template-rows: 1fr auto;
     min-height: 100%;
     min-width: 700px;
     font-family: Arial, Helvetica, sans-serif;
@@ -550,4 +550,61 @@ main > aside > div.grid > section.extensions > ul.disabled {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+footer {
+    grid-row: 2 / 3;
+    align-self: end;
+    height: 25px;
+    color: var(--color-plain-text);
+    background-color: var(--background-color-sidebar);
+    font-size: var(--font-size-small);
+    z-index: 1;
+}
+
+footer > * {
+    height: 100%;
+}
+
+footer > div.row *:hover {
+    cursor: pointer;
+    background-color: var(--background-color);
+}
+
+footer > div.row > ul,
+footer > div.row > div.file-stats {
+    height: 100%;
+    padding: 0 8px;
+}
+
+footer > div.row > ul.reports {
+    margin: 0 0 0 10px;
+}
+
+footer > div.row > ul.reports > li:not(:first-child) {
+    margin-left: 5px;
+}
+
+footer > div.row > ul.reports > li > span {
+    margin-left: 5px;
+}
+
+footer > div.row > ul.file-type {
+    margin: 0 auto 0 10px;
+}
+
+footer > div.row > ul.file-type > li:first-child > * {
+    margin-right: 5px;
+}
+
+footer > div.row > ul.file-type > li:last-child > * {
+    margin-left: 5px;
+}
+
+footer > div.row > div.file-stats > span {
+    margin-left: 5px;
+}
+
+footer > div.row div.file-stats:last-child {
+    margin-right: 10px;
 }
