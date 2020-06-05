@@ -122,3 +122,63 @@ main > div.grid > nav > ul.breadcrumb > li:not(:last-child)::after {
     font-size: var(--font-size-tiny);
     padding-left: 8px;
 }
+
+main > div.grid > section.editor * {
+    font-family: "Oxygen Mono", monospace;
+}
+
+main > div.grid > section.editor {
+    display: grid;
+    /* line numbers | content area */
+    grid-template-columns: 65px 1fr;
+    grid-column: 1;
+}
+
+main > div.grid > section.editor > * {
+    /* Window height - (header height + tab navigation height + footer height) */
+    height: calc(100vh - (75px + 65px + 25px));
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--color-code);
+    font-size: var(--font-size-normal);
+    outline: none;
+}
+
+main > div.grid > section.editor > div.line-numbers {
+    align-items: flex-start;
+}
+
+main > div.grid > section code > span {
+    display: block;
+}
+
+main > div.grid > section.editor > div.line-numbers > span {
+    color: var(--color-paragraph);
+}
+
+main > div.grid > section.editor > div > span {
+    padding: 8px 4px;
+}
+
+main > div.grid > section.editor > section.content > code > span {
+    padding: 8px 0;
+}
+
+main > div.grid > section code > span.highlight {
+    background-color: var(--background-color-current-line);
+}
+
+main > div.grid > section code span.unknown-word {
+    position: relative;
+}
+
+main > div.grid > section code span.unknown-word::after {
+    content: "~~~~";
+    position: absolute;
+    left: 0;
+    color: var(--color-spellchecker-unknown-word);
+}
+
+main > div.grid > section.editor span.unknown-word::after {
+    top: 1rem;
+}

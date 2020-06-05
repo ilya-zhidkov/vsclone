@@ -1,6 +1,7 @@
 :root {
     /* Defaults */
     --color-default-icon: rgb(130, 130, 130);
+    --color-spellchecker-unknown-word: rgb(66, 126, 181);
 
     /* Light theme */
     --background-color-light: rgb(242, 242, 242);
