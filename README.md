@@ -2,6 +2,8 @@
 
 A static template of popular Visual Studio Code editor.
 
+![VSClone](./public/assets/gifs/vsclone.gif)
+
 ---
 
 ## Setup
@@ -18,6 +20,19 @@ A static template of popular Visual Studio Code editor.
 - [x] Changing color scheme
 - [x] Persisting current color settings
 - [x] Switching between sections (For now, only Explorer and Extensions)
+
+---
+
+#### Use case
+
+- Setting up a new **vanilla HTML & CSS** project
+- Emphasizing on **HTML 5 semantic tags**
+- Positioning elements using **Flexbox** and **CSS Grid**
+- Including **FontAwesome 5** icon library
+- Improving typography with **Google Fonts** 
+- Implementing **Sticky Footer**
+- Creating flexible work-flow for adding new **color themes** 
+- Persisting current theme in a **locale storage**
 
 ---
 
