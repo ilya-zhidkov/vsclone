@@ -123,7 +123,8 @@ main > div.grid > nav > ul.breadcrumb > li:not(:last-child)::after {
     padding-left: 8px;
 }
 
-main > div.grid > section.editor * {
+main > div.grid > section.editor *,
+main > div.grid > section.minimap * {
     font-family: "Oxygen Mono", monospace;
 }
 
@@ -135,8 +136,8 @@ main > div.grid > section.editor {
 }
 
 main > div.grid > section.editor > * {
-    /* Window height - (header height + tab navigation height + footer height) */
-    height: calc(100vh - (75px + 65px + 25px));
+    /* Window height - (tab navigation height + footer height) */
+    height: calc(100vh - (65px + 25px));
     width: 100%;
     background-color: var(--background-color);
     color: var(--color-code);
@@ -181,4 +182,23 @@ main > div.grid > section code span.unknown-word::after {
 
 main > div.grid > section.editor span.unknown-word::after {
     top: 1rem;
+}
+
+main > div.grid > section.minimap {
+    grid-column: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+main > div.grid > section.minimap > code {
+    position: absolute;
+    width: 100%;
+    color: var(--color-plain-text);
+    font-size: 4px;
+    user-select: none;
+    margin-left: 8px;
+}
+
+main > div.grid > section.minimap > code span.unknown-word::after {
+    top: 4px;
 }
