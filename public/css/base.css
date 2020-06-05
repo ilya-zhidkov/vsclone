@@ -9,6 +9,24 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: none;
+    outline: none;
+    font-size: var(--font-size-small);
+    font-family: inherit;
+    color: #ffffff;
+    padding: 0 6px;
+}
+
+form input {
+    color: var(--color-plain-text);
+    border: 1px solid var(--border-color-active);
+    background-color: var(--background-color-input);
+    font-size: inherit;
+    padding: 5px;
+    width: 100%;
+}
+
 ul {
     list-style: none;
     overflow-y: scroll;

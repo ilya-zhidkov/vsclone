@@ -62,7 +62,7 @@
             <aside>
                 <div class="grid">
                     <ul class="column icons">
-                        <li class="active">
+                        <li>
                             <i class="far fa-copy"></i>
                             <span class="indicator">
                                 <label class="counter">1</label>
@@ -71,11 +71,11 @@
                         <li><i class="fas fa-search"></i></li>
                         <li><i class="fas fa-code-branch"></i></li>
                         <li><i class="fas fa-play"></i></li>
-                        <li><i class="fas fa-shapes"></i></li>
+                        <li class="active"><i class="fas fa-shapes"></i></li>
                         <li><i class="fas fa-cog"></i></li>
                     </ul>
 
-                    <section class="explorer">
+                    <section class="explorer" style="display: none;">
                         <header>
                             <h2>Explorer</h2>
                         </header>
@@ -125,6 +125,130 @@
                             </li>
                             <li class="row">
                                 <p>The active editor cannot provide outline information.</p>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="extensions" style="display: block;">
+                        <header>
+                            <h2>Extensions</h2>
+
+                            <div class="row">
+                                <i class="fas fa-align-justify"></i>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </header>
+
+                        <form>
+                            <div class="row">
+                                <input type="text" placeholder="Search Extensions in Marketplace">
+                            </div>
+                        </form>
+                        
+                        <ul class="enabled dropdown">
+                            <li class="row">
+                                <i class="fas fa-chevron-down"></i>
+                                <label>enabled</label>
+                                <span class="indicator">
+                                    <label class="counter">10</label>
+                                </span>
+                            </li>
+                            <li class="row">
+                                <ul class="extension">
+                                    <li class="row"><span class="feature">C#</span> <span class="version">1.21.15</span></li>
+                                    <li class="row"><span class="description">C# for Visual Studio Code (powered by OmniSharp).</span></li>
+                                    <li class="row"><span class="publisher">Microsoft</span><i class="fas fa-cog"></i></li>
+                                </ul>
+                            </li>
+                            <li class="row">
+                                <ul class="extension">
+                                    <li class="row"><span class="feature">Code Spell Checker</span> <span class="version">1.8.0</span></li>
+                                    <li class="row"><span class="description">Spelling checker for source code</span></li>
+                                    <li class="row"><span class="publisher">Street Side Software</span><i class="fas fa-cog"></i></li>
+                                </ul>
+                            </li>
+                            <li class="row">
+                                <ul class="extension">
+                                    <li class="row"><span class="feature">Czech - Code Spell Checker</span> <span class="version">0.1.2</span></li>
+                                    <li class="row"><span class="description">Czech dictionary extension for VS Code.</span></li>
+                                    <li class="row"><span class="publisher">Street Side Software</span><i class="fas fa-cog"></i></li>
+                                </ul>
+                            </li>
+                            <li class="row">
+                                <ul class="extension badge">
+                                    <li class="row"><span class="feature">Docker</span> <span class="version">1.0.0</span></li>
+                                    <li class="row"><span class="description">Makes it easy to create, manage, and debug containerized applications.</span></li>
+                                    <li class="row"><span class="publisher">Microsoft</span><i class="fas fa-cog"></i></li>
+                                </ul>
+                            </li>
+                            <li class="row">
+                                <ul class="extension">
+                                    <li class="row"><span class="feature">EditorConfig for VS Code</span> <span class="version">0.14.4</span></li>
+                                    <li class="row"><span class="description">EditorConfig Support for Visual Studio Code</span></li>
+                                    <li class="row"><span class="publisher">EditorConfig</span><i class="fas fa-cog"></i></li>
+                                </ul>
+                            </li>
+                            <li class="row">
+                                <ul class="extension badge">
+                                    <li class="row"><span class="feature">ESLint</span> <span class="version">2.1.2</span></li>
+                                    <li class="row"><span class="description">Integrates ESLint JavaScript into VS Code.</span></li>
+                                    <li class="row"><span class="publisher">Dirk Baeumer</span><i class="fas fa-cog"></i></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <ul class="recommended dropdown">
+                            <li class="row">
+                                <i class="fas fa-chevron-down"></i>
+                                <label>recommended</label>
+                                <span class="indicator">
+                                    <label class="counter">8</label>
+                                </span>
+                            </li>
+                            <li class="row">
+                                <ul class="extension badge">
+                                    <li class="row"><span class="feature">Debugger for Chrome</span> <span class="version">4.12.6</span></li>
+                                    <li class="row"><span class="description">Debug your JavaScript code in the Chrome browser, or any other target that supports the Chrome Debugger protocol.</span></li>
+                                    <li class="row"><span class="publisher">Microsoft</span><button>Install</button></li>
+                                </ul>
+                            </li>
+                            <li class="row">
+                                <ul class="extension badge">
+                                    <li class="row"><span class="feature">Debugger for Firefox</span> <span class="version">2.7.1</span></li>
+                                    <li class="row"><span class="description">Debug your web application or browser extension in Firefox.</span></li>
+                                    <li class="row"><span class="publisher">Firefox DevTools</span><button>Install</button></li>
+                                </ul>
+                            </li>
+                            <li class="row">
+                                <ul class="extension badge">
+                                    <li class="row"><span class="feature">jshint</span> <span class="version">0.10.21</span></li>
+                                    <li class="row"><span class="description">Integrates JSHint into VS Code. JSHint is a linter for JavaScript.</span></li>
+                                    <li class="row"><span class="publisher">Dirk Baeumer</span><button>Install</button></li>
+                                </ul>
+                            </li>
+                            <li class="row">
+                                <ul class="extension badge">
+                                    <li class="row"><span class="feature">Beautify</span> <span class="version">1.5.0</span></li>
+                                    <li class="row"><span class="description">Beautify code in place for VS Code.</span></li>
+                                    <li class="row"><span class="publisher">HookyQR</span><button>Install</button></li>
+                                </ul>
+                            </li>
+                            <li class="row">
+                                <ul class="extension badge">
+                                    <li class="row"><span class="feature">markdownlint</span> <span class="version">0.34.0</span></li>
+                                    <li class="row"><span class="description">Markdown linting and style checking for Visual Studio Code.</span></li>
+                                    <li class="row"><span class="publisher">David Anson</span><button>Install</button></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <ul class="disabled dropdown">
+                            <li class="row">
+                                <i class="fas fa-chevron-right"></i>
+                                <label>disabled</label>
+                                <span class="indicator">
+                                    <label class="counter">0</label>
+                                </span>
                             </li>
                         </ul>
                     </section>
