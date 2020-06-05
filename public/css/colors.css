@@ -1,0 +1,29 @@
+:root {
+    /* Defaults */
+    --color-default-icon: rgb(130, 130, 130);
+
+    /* Light theme */
+    --background-color-light: rgb(242, 242, 242);
+    --background-color-light-sidebar: rgb(238, 238, 238);
+    --background-color-light-active: rgba(201, 211, 193);
+    --background-color-light-active-command: rgb(191, 216, 171);
+    --background-color-light-active-list-item: rgb(201, 211, 194);
+    --background-color-light-current-line: rgb(222, 245, 202);
+    --background-color-light-toolbar: rgb(240, 240, 240);
+    --background-color-light-key-cap: rgb(229, 229, 229);
+    --background-color-light-input: rgb(255, 255, 255);
+    --background-color-light-dropdown: rgb(232, 226, 235);
+
+    --border-color-light-active: rgb(150, 165, 137);
+    --border-color-dark-indentation: rgb(153, 153, 153);
+
+    --color-dark-plain-text: rgb(95, 95, 95);
+    --color-dark-active-text: rgb(38, 38, 43);
+    --color-dark-icon: rgb(186, 189, 188);
+    --color-dark-code : rgb(38, 38, 38);
+    --color-light-paragraph: rgb(202, 206, 204);
+    --color-light-note: rgb(158, 174, 143);
+
+    --box-shadow-color-light: rgba(0, 0, 0, 0.3);
+    --box-shadow-color-light-key-cap: rgb(204, 204, 204);
+}

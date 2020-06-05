@@ -1,0 +1,25 @@
+.vscode-light {
+    --background-color: var(--background-color-light);
+    --background-color-sidebar: var(--background-color-light-sidebar);
+    --background-color-active: var(--background-color-light-active);
+    --background-color-active-command: var(--background-color-light-active-command);
+    --background-color-active-list-item: var(--background-color-light-active-list-item);
+    --background-color-toolbar: var(--background-color-light-toolbar);
+    --background-color-key-cap: var(--background-color-light-key-cap);
+    --background-color-current-line: var(--background-color-light-current-line);
+    --background-color-input: var(--background-color-light-input);
+    --background-color-dropdown: var(--background-color-light-dropdown);
+
+    --color-plain-text: var(--color-dark-plain-text);
+    --color-active-text: var(--color-dark-active-text);
+    --color-icon: var(--color-dark-icon);
+    --color-code: var(--color-dark-code);
+    --color-note: var(--color-light-note);
+    --color-paragraph: var(--color-light-paragraph);
+
+    --border-color-active: var(--border-color-light-active);
+    --border-color-indentation: var(--border-color-dark-indentation);
+
+    --box-shadow-color: var(--box-shadow-color-light);
+    --box-shadow-color-key-cap: var(--box-shadow-color-light-key-cap);
+}
