@@ -8,7 +8,12 @@ A static template of popular Visual Studio Code editor.
 
 ## Setup
 
-1. Clone or download repository.
+1. Clone or download repository
+   
+    ```bash
+    git clone https://github.com/ilya-zhidkov/vsclone.git
+    ```
+
 2. Open `index.html` file using either local or file server.
 
 ---
