@@ -112,7 +112,6 @@ main > div.grid > nav > ul.tabs {
     /* Tabs space - settings panel */
     width: calc(100% - 100px);
     justify-content: flex-start;
-    overflow-x: scroll;
 }
 
 main > div.grid > nav > ul.tabs > li {
@@ -163,7 +162,6 @@ main > div.grid > nav > ul.settings > li {
 main > div.grid > nav > ul.breadcrumb {
     height: 25px;
     justify-content: flex-start;
-    overflow-x: scroll;
     background-color: var(--background-color);
 }
 
@@ -317,10 +315,11 @@ main > aside > div.grid > ul.icons > li span.indicator {
 
 main > aside > div.grid > ul.icons > li > span.indicator > label.counter {
     position: absolute;
+    left: 30%;
+    bottom: 10%;
     color: rgb(217, 217, 217);
     filter: brightness(150%);
     font-size: var(--font-size-tiny);
-    transform: translate(-55%, 5%);
 }
 
 main > aside > div.grid > ul.icons > li:first-child {
@@ -347,7 +346,10 @@ main > aside > div.grid > section {
     grid-column: 2;
     position: relative;
     width: 300px;
+    /* View port height - footer height */
+    height: calc(100vh - 25px);
     background-color: var(--background-color-sidebar);
+    overflow: hidden;
 }
 
 main > aside > div.grid > section > header {
@@ -382,6 +384,7 @@ main > aside > div.grid > section > ul.dropdown > li:first-child {
     background-color: var(--background-color-dropdown);
     color: var(--color-plain-text);
     padding: 4px 0 4px 4px;
+    z-index: 1;
 }
 
 main > aside > div.grid > section > ul.dropdown > li:not(:first-child) {

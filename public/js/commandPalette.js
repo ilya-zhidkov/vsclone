@@ -24,6 +24,8 @@ document.onkeydown = event => {
 
     // If 'Ctrl + P' keys were pressed...
     if (event.ctrlKey && event.keyCode === 80) {
+        event.preventDefault();
+        
         commandPalette.style.display = 'block';
         commandInput.focus();
     }

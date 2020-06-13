@@ -29,7 +29,6 @@ form input {
 
 ul {
     list-style: none;
-    overflow-y: scroll;
 }
 
 ul li:hover,
